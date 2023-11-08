@@ -1,0 +1,12 @@
+
+
+
+
+
+.background {
+    
+    background-image: url('/images/background/1.png'); /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    transform: rotate(90deg); /* Rotate the background image by 90 degrees */
+}
+
