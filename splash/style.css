@@ -3,10 +3,14 @@
 
 
 
-.background {
-    
-    background-image: url('/images/background/1.png'); /* Replace 'your-image.jpg' with your image file */
-    background-size: cover;
-    transform: rotate(90deg); /* Rotate the background image by 90 degrees */
+body ::before {
+        background-image: url(1.png);
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
 }
+
 
