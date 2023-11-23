@@ -6,8 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img src="/images/favicon/favicon/innndexhp.png" alt="bgimg" class="bgimg">
-    <button>Neumorphism</button>
+
+    <script type="text/javascript">
+        // Popup window code
+        function newPopup(url, windowName, height, width, left, top) {
+            window.open(
+                url, windowName, `height=${height}px,width=${width}px,left=${left}px,top=${top}px,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=yes`
+            );
+        }
+    </script>
+
+    <p><a href="JavaScript:newPopup('/patch-gallery/index.html', 'codeGarden', 300, 400, 500, 10);">Open code garden</a></p>
+    <p><a href="JavaScript:newPopup('/offworld/index.html', 'offworld', 500, 600, 0, 0);">Open offworld</a></p>
+
 </body>
 </html>
+
