@@ -95,6 +95,14 @@ div#item-0:hover {
   grid-column-end: 6;
   
 }
+
+
+div#item-1:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+
 #item-2 {
   background: #E6EDEA;
 
@@ -107,6 +115,12 @@ div#item-0:hover {
   grid-column-end: 5;
   
 }
+
+
+div#item-2:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
 #item-3 {
   background: #E6EDEA;
 
@@ -119,6 +133,13 @@ div#item-0:hover {
   grid-column-end: 8;
   
 }
+
+
+div#item-3:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
 #item-4 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
   border-radius: 30px;
@@ -131,6 +152,13 @@ div#item-0:hover {
   grid-column-end: 8;
   
 }
+
+
+div#item-4:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
 #item-5 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
   border-radius: 30px;
@@ -143,6 +171,13 @@ div#item-0:hover {
   grid-column-end: 10;
   
 }
+
+
+div#item-5:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
 #item-6 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
   border-radius: 20px;
@@ -155,6 +190,13 @@ div#item-0:hover {
   grid-column-end: 3;
   
 }
+
+
+div#item-6:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
 #item-7 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
 border-radius: 30px;
@@ -167,6 +209,10 @@ grid-row-start: 4;
   
 }
 
+
+div#item-7:hover {
+  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 
 ::-webkit-scrollbar {
   display: none;
