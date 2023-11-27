@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "sharkvsgoogle",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sharkvsgoogle",
+		"liveServer.settings.port": 5501
+	}
+}

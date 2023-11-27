@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GLTF Loader Example</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Importing Three.js library -->
+  <script src="https://threejs.org/build/three.js"></script>
+  <!-- Importing GLTFLoader.js -->
+  <script src="https://threejs.org/examples/jsm/loaders/GLTFLoader.js"></script>
+
+  <script>
+    // Initialize scene, camera, and renderer
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Add a light
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(1, 1, 1).normalize();
+    scene.add(light);
+
+    // Create GLTF loader
+    const loader = new THREE.GLTFLoader();
+
+    // Load local GLTF file
+    loader.load('mb.gltf', function(gltf) {
+      scene.add(gltf.scene);
+    }, undefined, function(error) {
+      console.error(error);
+    });
+
+    // Position camera
+    camera.position.z = 5;
+
+    // Animation
+    function animate() {
+      requestAnimationFrame(animate);
+
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>

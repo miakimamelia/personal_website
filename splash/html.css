@@ -1,0 +1,94 @@
+/* Container for the iframe */
+body {
+  text-align: center;
+
+}
+
+
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -100px;
+  background-color: #D0D8D6;
+
+}
+
+
+
+@font-face {
+font-family: Cybernet;
+src: url(/font/Cybernet.ttf);
+}
+
+
+/* Styles for the iframe itself */
+.centered-iframe {
+  width: 400px;  /* Set the width */
+  height: 500px; /* Set the height */
+  border: none;  /* Remove the default border */
+  background-color: #D0D8D6;
+  mix-blend-mode:darken;
+
+}
+
+.textbox {
+  top: -200px;
+  position: relative;
+}
+
+html {
+  background-color: #D0D8D6;
+  font-size: 125%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.error-code {
+  color: var(--error-code-color);
+  font-size: .4em;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-family: Cybernet;
+  font-weight: lighter;
+
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 0.5em;
+  line-height: 1.25em;
+  margin-bottom: 16px;
+  font-family: Cybernet;
+}
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: Cybernet;
+}
+
+
+
+ul {
+  font-size: 10px;
+  font-family: monospace;
+  line-height: 200%;
+}
+
+p {
+  font-family: monospace;
+
+}
+
+
+
+a {
+  color: var(--link-color);
+  font-family: Cybernet;
+  text-decoration: none;
+  font-size: x-small;
+}
+
+  
