@@ -3,7 +3,7 @@
 
 
 body {
-  background-color: #D2D5D4;
+  background-color: #fbfffe;
   margin: 0;
 }
 
@@ -28,20 +28,21 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 20px;
+    position: absolute;
     
 }
 
 
 .gallery iframe { 
 
- width: 20vw;
- height: 20vh;
+ width: 22vw;
+ height: 22vh;
 
   /* #1 */
-  border: 5px solid hsl(0, 0%, 20%);
+ 
   /* #2 */
-  padding: 5px;
-  background: hsl(0, 0%, 10%);
+  margin: 5px;
+  background: hsl(0, 0%, 0%);
   /* #3 */
   outline: 5px solid hsl(0, 0%, 30%);
   /* #4 AND INFINITY!!! (CSS3 only) */
@@ -50,12 +51,17 @@ body {
       0 0 0 15px hsl(0, 0%, 50%), 
       0 0 0 20px hsl(0, 0%, 60%),
       0 0 0 25px hsl(0, 0%, 70%), 
-      0 0 0 30px hsl(0, 0%, 80%), 
-      0 0 0 35px hsl(0, 0%, 90%), 
-      0 0 0 40px hsl(0, 0%, 100%);
+      0 0 0 30px hsl(0, 0%, 80%),
+      0 0 0 35px hsl(0, 0%, 90%);
     border-radius: 1px;
 
     /* transition: 500ms; */
 }
 
 
+iframe {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  
+}

@@ -22,7 +22,15 @@ font-family: Cybernet;
 src: url(/font/Cybernet.ttf);
 }
 
+@font-face {
+  font-family: BPdots;
+  src: url(/font/BPdotsUnicasePlus.otf);
+}
 
+@font-face {
+  font-family: BPbold;
+  src: url(/font/BPdotsUnicasePlusBold.otf);
+}
 /* Styles for the iframe itself */
 .centered-iframe {
   width: 400px;  /* Set the width */
@@ -34,7 +42,7 @@ src: url(/font/Cybernet.ttf);
 }
 
 .textbox {
-  top: -200px;
+  top: -160px;
   position: relative;
 }
 
@@ -43,16 +51,23 @@ html {
   font-size: 125%;
   display: flex;
   justify-content: center;
+  font-family: BPdots;
+
 
 }
 
 .error-code {
-  color: var(--error-code-color);
-  font-size: .4em;
+  font-size: 14px;
+  line-height: 20px;
   margin-top: 12px;
   text-transform: uppercase;
-  font-family: Cybernet;
-  font-weight: lighter;
+  font-family: BPdots;
+  text-wrap: wrap;
+  padding-left: 20%;
+  padding-right: 20%;
+
+
+
 
 }
 
@@ -61,12 +76,12 @@ h1 {
   font-size: 0.5em;
   line-height: 1.25em;
   margin-bottom: 16px;
-  font-family: Cybernet;
+  font-family: BPbold;
 }
 h2 {
   font-size: 1em;
   font-weight: normal;
-  font-family: Cybernet;
+  font-family: BPbold;
 }
 
 
@@ -86,9 +101,12 @@ p {
 
 a {
   color: var(--link-color);
-  font-family: Cybernet;
+  font-family: BPbold;
   text-decoration: none;
-  font-size: x-small;
+  font-size: small;
+  outline-style: double;
+  outline-color: #6d6d6d;
+  padding: 5px;
 }
 
   
