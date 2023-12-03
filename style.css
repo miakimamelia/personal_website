@@ -23,7 +23,7 @@ body {
   height: 100vh;
   position: relative;
   z-index: 0;
-  filter: brightness(150%) contrast(120%);
+
 }
 
 .bg {
@@ -37,7 +37,6 @@ font-size: xx-small;
   height: 100vh;
   position: relative;
   z-index: 0;
-  background-color: #CDD3D3;
 
 
 }
@@ -51,12 +50,12 @@ font-size: xx-small;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
-  height:40vh;
+  height:30vh;
 border-radius: 30px;
-  width:65vw;
+  width:40vw;
   padding: 15px;
   background-color: #d7dedd;
-  
+  mix-blend-mode:saturation;
   margin-bottom: 20px;
 }
  
