@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars */
+    background-color: antiquewhite;
+  }
+
+  
+  .bg img {
+    
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+  
+  }
+
+  .bg video {
+position: absolute;
+z-index: 1;
+width: 50vw;
+mix-blend-mode:luminosity;
+mix-blend-mode: hard-light;
+
+
+  }
+
+
+
+  .bg {
+    font-family: Cybernet;
+    font-size: 10rem;
+    justify-items: center;
+    align-items: center;
+    display: inline-grid;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+  }
+
+  @font-face {
+    font-family: Cybernet;
+    src: url('/font/Cybernet.ttf');
+  }

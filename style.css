@@ -8,14 +8,7 @@ p {
 }
 
 body {
-  background-blend-mode: hard-light;
-  background-attachment:fixed;
   margin: 0;
-  background-color: #CDD3D3;
-  
-
-   /* Hide scrollbars */
-  /* filter: brightness(120%) contrast(190%); */
 }
 .bg img {
   
@@ -237,8 +230,6 @@ div#item-7:hover {
   width:960px;
 }
 
-
- 
    button {
     left: 100px;
     margin-top: 50%;
