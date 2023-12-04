@@ -10,12 +10,35 @@ p {
 body {
   margin: 0;
 }
-.bg img {
+
+.bg video {
+  position: absolute;
+  z-index: 2;
+  width: 40vw;
+
+  filter: brightness(140%);
+  mix-blend-mode: hard-light;
+  mix-blend-mode: luminosity;
+  top: -60px;
+    }
+
+
+
+.bg1 {
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
   
+  
+}
+
+.bg2 {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  z-index: 0;
+  position: absolute;
+  z-index: -0;
 
 }
 
@@ -43,19 +66,20 @@ font-size: xx-small;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
-  height:30vh;
+  height:45vh;
 border-radius: 30px;
-  width:40vw;
+  width:35vw;
   padding: 15px;
-  background-color: #d7dedd;
-  mix-blend-mode:saturation;
+  background-color: #d7dedd5e;
+mix-blend-mode:luminosity;
+filter: brightness(90%);
   margin-bottom: 20px;
 }
  
 #item-0 {
   border-radius: 100px;
   border-radius: 50px;
-  background: #E6EDEA;
+  background: #e6edea;
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
 
   border-radius: 32px;
