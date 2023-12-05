@@ -3,9 +3,7 @@
   src: url(/font/Cybernet.ttf);
 }
 
-p {
-  font-family: Cybernet;
-}
+
 
 body {
   margin: 0;
@@ -30,6 +28,7 @@ body {
     height: 100vh;
     position: absolute;
     z-index: 1;
+
   
   
 }
@@ -38,7 +37,9 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  filter: blur(10px);
   z-index: -0;
+  
 
 }
 
@@ -60,19 +61,20 @@ font-size: xx-small;
 .angry-grid {
   box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   display: grid; 
   text-align: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   height:45vh;
-border-radius: 30px;
+
+  border-radius: 100px;
   width:35vw;
-  padding: 15px;
-  background-color: #d7dedd5e;
+  padding: 25px;
+  background-color: #d7dedd8e;
 mix-blend-mode:luminosity;
-filter: brightness(90%);
+filter: brightness(100%);
   margin-bottom: 20px;
 }
  
@@ -82,7 +84,7 @@ filter: brightness(90%);
   background: #e6edea;
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
 
-  border-radius: 32px;
+  border-radius: 100px;
   grid-row-start: 2;
   grid-column-start: 1;
   grid-row-end: 5;
@@ -103,7 +105,7 @@ div#item-0:hover {
 #item-1 {
   background: #E6EDEA;
 
-  border-radius: 30px;
+  border-radius: 100px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
   grid-row-start: 1;
   grid-column-start: 3;
@@ -125,7 +127,8 @@ div#item-1:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
   grid-row-start: 3;
   grid-column-start: 3;
-  border-radius: 30px;
+
+  border-radius: 100px;
 
   grid-row-end: 5;
   grid-column-end: 5;
@@ -143,8 +146,8 @@ div#item-2:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
   grid-row-start: 3;
   grid-column-start: 5;
-  border-radius: 30px;
 
+  border-radius: 100px;
   grid-row-end: 5;
   grid-column-end: 8;
   
@@ -158,8 +161,8 @@ div#item-3:hover {
 
 #item-4 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
-  border-radius: 30px;
 
+  border-radius: 100px;
   background: #E6EDEA;
   grid-row-start: 1;
   grid-column-start: 6;
@@ -177,8 +180,8 @@ div#item-4:hover {
 
 #item-5 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
-  border-radius: 30px;
 
+  border-radius: 100px;
   background: #E6EDEA;
   grid-row-start: 1;
   grid-column-start: 8;
@@ -196,8 +199,8 @@ div#item-5:hover {
 
 #item-6 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
-  border-radius: 20px;
-
+  
+  border-radius: 100px;
   background: #E6EDEA;
   grid-row-start: 1;
   grid-column-start: 1;
@@ -215,8 +218,9 @@ div#item-6:hover {
 
 #item-7 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
-border-radius: 30px;
-background: #E6EDEA;
+
+  border-radius: 100px;
+  background: #E6EDEA;
 grid-row-start: 4;
   grid-column-start: 8;
 
