@@ -10,14 +10,14 @@ body {
 }
 
 .bg video {
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  z-index: 5;
   width: 40vw;
 
   filter: brightness(140%);
   mix-blend-mode: hard-light;
   mix-blend-mode: luminosity;
-  top: -60px;
+  top: -100px;
     }
 
 
