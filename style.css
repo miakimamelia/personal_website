@@ -7,20 +7,29 @@
 
 body {
   margin: 0;
+  background-color: rgb(0, 0, 0);
 }
 
 .bg video {
   position: relative;
-  z-index: 5;
+  z-index: 3;
   width: 40vw;
 
   filter: brightness(140%);
   mix-blend-mode: hard-light;
   mix-blend-mode: luminosity;
-  top: -100px;
+  top: -250px;
     }
 
 
+    .border {
+      position: fixed;
+      z-index: 1;
+      width: 100vw;
+      height: 100vh;
+      filter:grayscale(90%);
+      mix-blend-mode: exclusion;    
+      }
 
 .bg1 {
 
@@ -37,7 +46,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  filter: blur(10px);
+  filter: blur(10px) brightness(70%);
   z-index: -1;
   
 
@@ -68,13 +77,13 @@ font-size: xx-small;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   height:45vh;
+  filter: brightness(100%);;
 
   border-radius: 100px;
   width:35vw;
   padding: 25px;
   background-color: #d7dedd8e;
 mix-blend-mode:luminosity;
-filter: brightness(100%);
   margin-bottom: 20px;
 }
  
