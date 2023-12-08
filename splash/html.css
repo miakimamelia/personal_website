@@ -1,8 +1,4 @@
-/* Container for the iframe */
-body {
-  text-align: center;
 
-}
 
 
 
@@ -13,9 +9,15 @@ body {
   top: -100px;
   background-color: #D0D8D6;
 
+
 }
 
+body {
+  margin: 0;
+  overflow: hidden; /* Hide scrollbars */
+  text-align: center;
 
+}
 
 @font-face {
 font-family: Cybernet;
@@ -37,6 +39,7 @@ src: url(/font/Cybernet.ttf);
   height: 500px; /* Set the height */
   border: none;  /* Remove the default border */
   background-color: #D0D8D6;
+  overflow: hidden;
   mix-blend-mode:darken;
 
 }
