@@ -5,23 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <script src="script.js"></script>
+  
 </head>
 
-
-
 <body>
-
-   
-
     <script type="text/javascript">
-        // Popup window code
-        function newPopup(url, windowName, height, width, left, top) {
-            window.open(
-                url, windowName, `height=${height}px,width=${width}px,left=${left}px,top=${top}px,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=yes`
-            );
-        }
-
         // Function to show modal on page load
         window.onload = function () {
             // Get the modal and the close button
@@ -38,68 +27,107 @@
 
             // Close the modal if the user clicks outside of it
             document.getElementById('enterButton').onclick = function () {
-    document.getElementById('myModal').style.display = 'none';
-
+                document.getElementById('myModal').style.display = 'none';
             };
         };
     </script>
 
-<div id="myModal">
-    <div id="modalContent">
-        <span id="closeModal">&times;</span>
-        <iframe src="/splash/index.html" frameborder="0"></iframe>
-        <!-- New div for the "Enter" button -->
-        <div id="enterButtonContainer">
-            <p><a href="#" id="enterButton">Enter</a></p>
+    <div id="myModal">
+        <div id="modalContent">
+            <span id="closeModal">&times;</span>
+            <iframe src="/splash/index.html" frameborder="0"></iframe>
+            <!-- New div for the "Enter" button -->
+            <div id="enterButtonContainer">
+                <p><a href="#" id="enterButton">Enter</a></p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="bg">
-<img src="/images/Untitled-1 [Recovered].png" alt="" class="border">
-<img src="/images/telas_border.png" alt="" class="border"style="filter: invert(10)">
-    <video autoplay loop>
-        <source src="/enter/0001.webm" type="video/webm">
-    </video>
+    <div class="bg">
+        <img src="/images/Untitled-1 [Recovered].png" alt="" class="border">
+        <img src="/images/telas_border.png" alt="" class="border"style="filter: invert(10)">
+        <video autoplay loop>
+            <source src="/enter/0001.webm" type="video/webm">
+        </video>
 
-    <img src="/images/frame-min.png" alt="bgimg" class="bg1">
-    <img src="/splash/1.png" alt="bgimg2" class="bg2">
+        <img src="/images/frame-min.png" alt="bgimg" class="bg1">
+        <img src="/splash/1.png" alt="bgimg2" class="bg2">
 
+        <div class="angry-grid">
+            <div id="item-0">
+                <p>This is the main content. To display a lightbox click <a href="javascript:void(0)"
+                        onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">item
+                        0</a></p>
 
-    <div class="angry-grid">
-        <div id="item-0">
-   <p>ite,nkj ◙, ⊷, ⧇, ◙, ⠕, 𐫈, ⊹, ⑈ay secrets. Gatekeepers</p>
-            <p><a href="JavaScript:newPopup('/patch-gallery/index.html', 'codeGarden', 300, 400, 500, 10);">Open code garden</a></p>
-        </div>
-        <div id="item-1">
-            item 1
-            <p><a href="JavaScript:newPopup('/offworld/index.html', 'offworld', 500, 600, 0, 0);">Open offworld</a></p>
-        </div>
-        <div id="item-2">  
-            item 2  
-            <p><a href="JavaScript:newPopup('/webgems/index.html', 'webgems', 600, 600, 110, 0);">Open webgem</a></p> 
-        </div>
-        <div id="item-6">
-            6
-            <p><a href="JavaScript:newPopup('/sc/index.html', 'sinecity', 300, 300, 200, 10);">sinecity</a></p>
-        </div>
-        <div id="item-3">
-            item 3
+                <p><a href="JavaScript:newPopup('/patch-gallery/index.html', 'codeGarden', 300, 400, 500, 10);">Open code
+                        garden</a></p>
+            </div>
+            <div id="item-1">
+                item 1
+                <p><a href="JavaScript:newPopup('/offworld/index.html', 'offworld', 500, 600, 0, 0);">Open offworld</a></p>
+            </div>
+            <div id="item-2">  
+                item 2  
+                <p><a href="JavaScript:newPopup('/webgems/index.html', 'webgems', 600, 600, 110, 0);">Open webgem</a></p> 
+            </div>
 
-        </div>
-        <div id="item-4">
-item 4
-        </div>
-        <div id="item-5">
-            item 5
-        </div>
-       
-        <div id="item-7">7
-            
-        </div>
-      </div>
+            <div id="item-3">
+                item 3
+            </div>
+            <div id="item-4">
+                item 4
+            </div>
+            <div id="item-5">
+                item 5
+            </div>
+            <div id="item-6">
+                <p>This is Item <a href="javascript:void(0)"
+                        onclick="document.getElementById('6').style.display='block';document.getElementById('fade').style.display='block'">SIX</a>
+                </p>
+            </div>
 
-</div>
+            <div id="item-7">
+                <p>This is Item <a href="javascript:void(0)"
+                        onclick="document.getElementById('7').style.display='block';document.getElementById('fade').style.display='block'">SEVEN</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="6" class="content6" onmousedown="startDrag(event, '6')">
+        <iframe src="/sc/index.html" frameborder="0"></iframe>
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('6').style.display='none';document.getElementById('fade').style.display='none'">X</a>
+    </div>
+    <div id="fade" class="overlay6"></div>
+
+    <div id="7" class="content7" onmousedown="startDrag(event, '7')">
+        <iframe src="/offworld/index.html" frameborder="0"></iframe>
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('7').style.display='none';document.getElementById('fade').style.display='none'">X</a>
+            <a href="/offworld/index.html">fullscreen</a>
+    </div>
+    <div id="fade" class="overlay7"></div>
+
+    <script>
+        function startDrag(e, id) {
+            e.preventDefault();
+            let offsetX = e.clientX - parseFloat(getComputedStyle(document.getElementById(id)).left);
+            let offsetY = e.clientY - parseFloat(getComputedStyle(document.getElementById(id)).top);
+
+            function dragMove(e) {
+                document.getElementById(id).style.left = e.clientX - offsetX + 'px';
+                document.getElementById(id).style.top = e.clientY - offsetY + 'px';
+            }
+
+            function dragEnd() {
+                document.removeEventListener('mousemove', dragMove);
+                document.removeEventListener('mouseup', dragEnd);
+            }
+
+            document.addEventListener('mousemove', dragMove);
+            document.addEventListener('mouseup', dragEnd);
+        }
+    </script>
 </body>
 </html>
-
