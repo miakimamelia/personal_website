@@ -78,7 +78,7 @@ h1 {
   color: var(--heading-color);
   font-size: 0.5em;
   line-height: 1.25em;
-  margin-bottom: 16px;
+ 
   font-family: BPbold;
 }
 h2 {
@@ -103,12 +103,6 @@ p {
 
 
 a {
-  color: var(--link-color);
-  font-family: BPbold;
-  text-decoration: none;
-  font-size: small;
-  outline-style: double;
-  outline-color: #6d6d6d;
   padding: 5px;
 }
 

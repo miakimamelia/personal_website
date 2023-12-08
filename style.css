@@ -12,6 +12,7 @@ body {
 }
 
 
+
  /* Styles for the modal */
  #myModal {
   display:flex;
@@ -22,18 +23,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(205, 205, 205, 0.5);
   backdrop-filter: blur(10px);
-  
-
-}
-
-#modalContent {
-  background-color: #fefefe00;
-  width: 50%;
-  height: 80%;
-  text-align: center;
-  border-radius: 100px;
   
 
 }
@@ -50,6 +41,48 @@ iframe {
   font-size: 28px;
   font-weight: bold;
 }
+
+/* Add these styles at the end of your existing CSS */
+
+
+#enterButtonContainer {
+  position: fixed;
+  bottom: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#enterButton {
+  color: var(--link-color);
+  font-family: Cybernet;
+  text-decoration: none;
+  font-size: small;
+  outline-style: double;
+  outline-color: #6d6d6d;
+  position: relative; /* Adjusted position */
+  display: inline-block; /* Added display property */
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #00000000; /* Adjusted background color */
+  color: #000000; /* Adjusted text color */
+}
+
+#modalContent {
+  background-color: #fefefe00;
+  
+  width: 50%;
+  height: 80%;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 25%;
+  margin-top: 2%;
+ 
+
+
+}
+
+
+
 
 .bg video {
   position: relative;
