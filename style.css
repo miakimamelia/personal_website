@@ -16,20 +16,6 @@ body {
 
 
 
-/* Styles for the modal */
-#myModal {
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(205, 205, 205, 0.5);
-  backdrop-filter: blur(10px);
-}
-
 iframe {
   width: 100%;
   height: 100%;
@@ -37,12 +23,6 @@ iframe {
   
 }
 
-#closeModal {
-  color: #ffffff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
 
 .overlay0 {
@@ -191,39 +171,6 @@ iframe {
 }
 
 
-
-
-#enterButtonContainer {
-  position: fixed;
-  bottom: 29%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#enterButton {
-  color: var(--link-color);
-  font-family: Cybernet;
-  text-decoration: none;
-  font-size: small;
-  outline-style: double;
-  outline-color: #6d6d6d;
-  position: relative;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #00000000;
-  color: #000000;
-}
-
-#modalContent {
-  background-color: #fefefe00;
-  width: 50%;
-  height: 80%;
-  text-align: center;
-  border-radius: 100px;
-  margin-left: 25%;
-  margin-top: 2%;
-}
 
 .bg video {
 position: fixed;

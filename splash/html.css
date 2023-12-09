@@ -1,14 +1,21 @@
 
 
-
+  .blur-background {
+    background-image: url('Screenshot\ 2023-12-09\ 173423.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100vh;
+    /* Add any other styles you need */
+  }
 
 .iframe-container {
   display: flex;
   justify-content: center;
   position: relative;
   top: -100px;
-  background-color: #D0D8D6;
-
 
 }
 
@@ -16,6 +23,7 @@ body {
   margin: 0;
   overflow: hidden; /* Hide scrollbars */
   text-align: center;
+  
 
 }
 
@@ -38,7 +46,6 @@ src: url(/font/Cybernet.ttf);
   width: 400px;  /* Set the width */
   height: 500px; /* Set the height */
   border: none;  /* Remove the default border */
-  background-color: #D0D8D6;
   overflow: hidden;
   mix-blend-mode:darken;
 
@@ -50,11 +57,11 @@ src: url(/font/Cybernet.ttf);
 }
 
 html {
-  background-color: #D0D8D6;
   font-size: 125%;
   display: flex;
   justify-content: center;
   font-family: BPdots;
+
 
 
 }
@@ -107,3 +114,19 @@ a {
 }
 
   
+
+
+#enterButton {
+  color: var(--link-color);
+  font-family: Cybernet;
+  text-decoration: none;
+  font-size: small;
+  outline-style: double;
+  outline-color: #6d6d6d;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #00000000;
+  color: #000000;
+}

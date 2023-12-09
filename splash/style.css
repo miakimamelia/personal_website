@@ -12,11 +12,12 @@ body {
         overflow: hidden;
         margin: 0;
         padding: 0;
+        
       }
       
       [hidden] {
         display: none !important;
-        background-color: #D0D8D6;
+        
 
       }
 
