@@ -60,17 +60,18 @@
                         onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">item
                         0</a></p>
 
-                <p><a href="JavaScript:newPopup('/patch-gallery/index.html', 'codeGarden', 300, 400, 500, 10);">Open code
-                        garden</a></p>
+                        <p>This is Item <a href="javascript:void(0)"
+                            onclick="document.getElementById('0').style.display='block';document.getElementById('fade').style.display='block'">0</a>
+                    </p>
             </div>
-            <div id="item-1">
+            <!-- <div id="item-1">
                 item 1
                 <p><a href="JavaScript:newPopup('/offworld/index.html', 'offworld', 500, 600, 0, 0);">Open offworld</a></p>
             </div>
             <div id="item-2">  
                 item 2  
                 <p><a href="JavaScript:newPopup('/webgems/index.html', 'webgems', 600, 600, 110, 0);">Open webgem</a></p> 
-            </div>
+            </div> -->
 
             <div id="item-3">
                 item 3
@@ -78,12 +79,12 @@
                     onclick="document.getElementById('3').style.display='block';document.getElementById('fade').style.display='block'">THREE</a>
             </p>
             </div>
-            <div id="item-4">
+            <!-- <div id="item-4">
                 item 4
             </div>
             <div id="item-5">
                 item 5
-            </div>
+            </div> -->
             <div id="item-6">
                 <p>This is Item <a href="javascript:void(0)"
                         onclick="document.getElementById('6').style.display='block';document.getElementById('fade').style.display='block'">SIX</a>
@@ -120,6 +121,19 @@
             <a href="/xenoliths/index.html">fullscreen</a>
     </div>
     <div id="fade" class="overlay3"></div>
+
+
+    
+    <div id="0" class="content0" onmousedown="startDrag(event, '0')">
+       <iframe src="/0/index.html" frameborder="0"></iframe>
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('0').style.display='none';document.getElementById('fade').style.display='none'">X</a>
+            <a href="/0/index.html">fullscreen</a>
+    </div>
+    <div id="fade" class="overlay0"></div>
+
+
+
 
     <script>
         function startDrag(e, id) {
