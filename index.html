@@ -74,6 +74,9 @@
 
             <div id="item-3">
                 item 3
+                <p>This is Item <a href="javascript:void(0)"
+                    onclick="document.getElementById('3').style.display='block';document.getElementById('fade').style.display='block'">THREE</a>
+            </p>
             </div>
             <div id="item-4">
                 item 4
@@ -109,6 +112,14 @@
             <a href="/offworld/index.html">fullscreen</a>
     </div>
     <div id="fade" class="overlay7"></div>
+
+    <div id="3" class="content3" onmousedown="startDrag(event, '3')">
+        <iframe src="/xenoliths/index.html" frameborder="0"></iframe>
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('3').style.display='none';document.getElementById('fade').style.display='none'">X</a>
+            <a href="/xenoliths/index.html">fullscreen</a>
+    </div>
+    <div id="fade" class="overlay3"></div>
 
     <script>
         function startDrag(e, id) {
