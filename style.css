@@ -1,4 +1,6 @@
-
+a {
+  color: white;
+}
 /* ... (your existing styles) ... */
 
 /* Set z-index for the angry-grid and #items */
@@ -348,7 +350,7 @@ div#item-1:hover {
 
 
 #item-2 {
-  background-image: url(/images/light.png);
+  background-image: url(/images/world.png);
 background-size: cover;
   border-radius: 100px;
   filter: drop-shadow(0 0 7px rgb(254, 254, 254, 20));
