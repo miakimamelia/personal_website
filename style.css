@@ -14,14 +14,23 @@ body {
 }
 
 
-
-
-iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  
+#overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Allows clicks to pass through */
 }
+
+#iframeContainer {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: auto; /* Allows clicks on the iframe */
+  filter: drop-shadow(0 0 5px rgba(255,255,255, 1));
+}
+
+
+
 
 
 
@@ -32,7 +41,6 @@ iframe {
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
   pointer-events: none; /* This allows click events to pass through */
@@ -52,8 +60,6 @@ iframe {
   height: 20%;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0);
- 
-  z-index: 1002;
   overflow: auto;
   cursor: move;
   text-align: right; /* Horizontal alignment to the right */
@@ -69,7 +75,6 @@ iframe {
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
   pointer-events: none; /* This allows click events to pass through */
@@ -90,7 +95,6 @@ iframe {
   padding: 25px;
   background-color: rgba(255, 255, 255, 0);
  
-  z-index: 1002;
   overflow: auto;
   cursor: move;
   text-align: right; /* Horizontal alignment to the right */
@@ -106,7 +110,6 @@ iframe {
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
   pointer-events: none; /* This allows click events to pass through */
@@ -126,7 +129,6 @@ iframe {
   padding: 25px;
   background-color: rgba(255, 255, 255, 0);
  
-  z-index: 1002;
   overflow: auto;
   cursor: move;
   text-align: right; /* Horizontal alignment to the right */
@@ -142,7 +144,6 @@ iframe {
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
   pointer-events: none; /* This allows click events to pass through */
@@ -163,7 +164,6 @@ iframe {
   padding: 25px;
   background-color: rgba(255, 255, 255, 0);
  
-  z-index: 1002;
   overflow: auto;
   cursor: move;
   text-align: right; /* Horizontal alignment to the right */
@@ -172,24 +172,36 @@ iframe {
 
 
 
-.bg video {
+.gif {
 position: fixed;
-  z-index: 3;
-  width: 30vw;
-  filter: brightness(140%);
+  width: 40vw;
+  filter: contrast(2);
   mix-blend-mode: hard-light;
   mix-blend-mode: luminosity;
   margin-bottom: 70vh;
+  z-index: 1111;
+ 
   
 }
 
-.border {
+.border1 {
+  position: fixed;
+  z-index: 0;
+  transform: rotate(180deg);
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: difference;
+  filter: invert(0) brightness(10) grayscale(90%) ;
+  
+}
+
+.border2 {
   position: fixed;
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  filter: grayscale(90%);
   mix-blend-mode: exclusion;
+  filter: invert(0) grayscale(90%) brightness(200%) drop-shadow(0 0 5px rgba(255,255,255, 1)) contrast(100);
 }
 
 .bg1 {
@@ -197,14 +209,17 @@ position: fixed;
   height: 100vh;
   position: absolute;
   z-index: 1;
+  filter: invert(0);
+
 }
 
 .bg2 {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  filter: blur(10px) brightness(70%);
+  filter: blur(10px);
   z-index: -1;
+  
 }
 
 .bg {
@@ -221,9 +236,7 @@ position: fixed;
 }
 
 .angry-grid {
-  box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
   position: absolute;
-  z-index: 3;
   display: grid;
   text-align: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -231,28 +244,29 @@ position: fixed;
   gap: 10px;
   height: 48vh;
   width: 48vw;
-  filter: brightness(100%);
+  filter: invert(0);
   border-radius: 20px;
   padding: 25px;
-  background-color: #d7dedd8e;
-  mix-blend-mode: luminosity;
+  z-index: 1000;
+  
   margin-bottom: 10px;
 }
 
 
 
-
 #item-0 {
-  border-radius: 10px;
-  background: #e6edea;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.006) 0px 2px 1px, rgba(0, 0, 0, 0.009) 0px 4px 2px, rgba(0, 0, 0, 0.009) 0px 8px 4px, rgba(0, 0, 0, 0.009) 0px 16px 8px, rgba(0, 0, 0, 0.009) 0px 32px 16px;
+  border-radius: 100px;
+  background-image: url('/images/enter.png');
+  background-size: cover;
+  filter: drop-shadow(0 0 7px rgb(254, 254, 254, 20));
 
-  border-radius: 20px;
+  box-shadow: rgb(176, 195, 181) 0px -23px 25px 0px inset, rgba(36, 42, 37, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(5, 56, 18, 0.219) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.03) 0px 16px 8px, rgba(104, 101, 101, 0.511) 0px 32px 16px;
   grid-row-start: 2;
   grid-column-start: 1;
   grid-row-end: 5;
   grid-column-end: 3;
 }
+
 
 
 div#item-0:hover {
@@ -401,18 +415,6 @@ div#item-7:hover {
 }
 
 
-
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 
 #wrapper {
   margin-left:auto;
