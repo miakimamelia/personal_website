@@ -356,11 +356,11 @@ div#item-2:hover {
 
 #item-3 {
   display: grid;
-  background-image: url(/imasges/light.png);
-background-size: cover;
+  background-image: url(/images/3.png);
+background-size: contain;
   border-radius: 100px;
   filter: drop-shadow(0 0 7px rgb(254, 254, 254, 20));
-  box-shadow: rgba(254, 254, 255, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
+  box-shadow: rgba(144, 144, 227, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(23, 11, 19, 0.511) 0px 32px 16px;
   grid-row-start: 3;
   grid-column-start: 5;
 z-index: inherit;
@@ -371,7 +371,7 @@ z-index: inherit;
 
 
 div#item-3:hover {
-  box-shadow: rgba(106, 106, 106, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(255, 255, 255, 0.404) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
 }
 
 
