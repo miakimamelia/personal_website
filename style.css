@@ -1,3 +1,55 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  resize: both; /* Allow resizing */
+  overflow: auto; /* Handle content overflow during resizing */
+  z-index: 10000; /* Set this value higher than other elements */
+  min-width: 200px; /* Set minimum width */
+  min-height: 200px; /* Set minimum height */
+}
+
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Resize handles */
+.modal {
+  border: 2px solid #333;
+}
+
+.modal::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: url('path-to-resize-icon.png') no-repeat;
+  background-size: contain;
+  cursor: se-resize; /* Set cursor for the bottom-right corner */
+}
+
+
+
 
 #item-0,
 #item-1,
@@ -17,7 +69,7 @@
 
 /* Set z-index for the gif */
 .gif {
-  z-index: 999999900; /* You can adjust this value as needed */
+  z-index: 99999990; /* You can adjust this value as needed */
 }
 
 
@@ -47,6 +99,7 @@ body {
   background-color: rgb(239, 239, 239);
   overflow: hidden;
   cursor: url(2bf5c84433a7835b5bd534073f506fd0.cur),pointer;
+  
   
   
 }
@@ -419,11 +472,11 @@ div#item-5:hover {
 
 #item-6 {
   display: grid;
-  background-image: url(/imagess/light.png);
-background-size: cover;
+  background-image: url(/images/4.png);
+background-size: contain;
   border-radius: 100px;
   filter: drop-shadow(0 0 7px rgb(254, 254, 254, 20));
-  box-shadow: rgba(254, 254, 255, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
+  box-shadow: rgba(255, 255, 255, 0.312) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
   grid-row-start: 1;
   grid-column-start: 1;
 
