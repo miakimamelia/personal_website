@@ -1,8 +1,7 @@
-video {
+img {
     position: relative;
     width: 45vw;
     left: 5%;
-    mix-blend-mode: difference;
     margin-top: 30px;   
       
     }
