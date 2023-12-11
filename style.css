@@ -436,11 +436,11 @@ div#item-4:hover {
 
 #item-5 {
   display: grid;
-  background-image: url(/imagses/light.png);
-background-size: cover;
+  background-image: url(/images/ayaka-endo-kamu-moshed-11-08-14-20-51.png);
+background-size: contain;
   border-radius: 100px;
   filter: drop-shadow(0 0 7px rgb(254, 254, 254, 20));
-  box-shadow: rgba(254, 254, 255, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
+  box-shadow: rgba(196, 197, 162, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
   grid-row-start: 1;
   grid-column-start: 8;
 
@@ -478,11 +478,11 @@ div#item-6:hover {
 
 #item-7 {
   display: grid;
-  background-image: url(/imasges/light.png);
+  background-image: url(/images/fd7ef6196e0d4c036cba352141adaa6f.jpg);
   background-size: cover;
     border-radius: 100px;
     filter: drop-shadow(0 0 7px rgb(254, 254, 254, 20));
-    box-shadow: rgba(254, 254, 255, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
+    box-shadow: rgba(187, 249, 152, 0.536) 0px -23px 25px 0px inset, rgba(42, 34, 41, 0.685) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.316) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(67, 11, 43, 0.132) 0px 4px 2px, rgba(0, 0, 0, 0.03) 0px 8px 4px, rgba(0, 0, 0, 0.222) 0px 16px 8px, rgba(104, 101, 103, 0.511) 0px 32px 16px;
 grid-row-start: 4;
   grid-column-start: 8;
 
