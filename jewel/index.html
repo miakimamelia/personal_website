@@ -7,130 +7,82 @@
 
     <style>
         body {
-        margin: 0;
-        background-color: rgb(92, 131, 164);
+            margin: 0;
+            overflow: hidden;        
         }
 
-        iframe {
-            width: 100vw;
-            height: 100vh;
-           
-            mix-blend-mode: difference;
-           
-            filter: invert();
-        }
-
-        .justframe {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode:color-dodge;
-
-}
-        #overlay {
+        .marquee-container {
+          z-index: 100;
     position: absolute;
     width: 100vw;
-    height: 100vh;
-  }
-  
-  #iframeContainer {
-    position: fixed;
-    z-index: 100000;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: auto; /* Allows clicks on the iframe */
-    filter: drop-shadow(0 0 5px rgba(255,255,255, 1));
-  }
-  
+   mix-blend-mode: difference;
+    height: 30px; /* Adjust the height as needed */
+    background-color: #f5e1e1; /* Set the background color */
+    color: rgb(11, 11, 11); /* Set the text color */
+    overflow: hidden;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgb(4, 237, 19); /* Add a 3D text shadow */
+    box-shadow: 0 1px 5px rgb(135, 255, 14); /* Add a box shadow */
+}
 
+.marquee {
+  
+    font-family: cyber;
+    display: inline-block;
+    animation: marqueeAnimation 50s linear infinite;
+}
 
+/* Rest of your CSS remains unchanged */
 
-.logo {
-position: fixed;
-  pointer-events: none;
-  filter: drop-shadow(0 0 3px rgb(4, 22, 157));
+        @keyframes marqueeAnimation {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
 
- }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: calc(100vh - 30px); /* Adjust the height to leave space for the marquee */
+            top: 30px; /* Adjust the top position to leave space for the marquee */
+            filter: invert(1) saturate(2);
+        }
 
+        .container iframe {
+            width: 100vw;
+            height: 100%;
+            mix-blend-mode: multiply; 
+        }
 
-  
-  
-  
-  
-  .gif {
-  position: fixed;
-    width: 40vw;
+        img {
+            pointer-events: none;
+            mix-blend-mode: difference;
+            filter: invert(0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* ensure the image appears above the iframe */
+            width: 100vw;
+            height: 100%;
+            transform: rotate(180deg);
+        }
 
-    margin-bottom: 70vh;
-    pointer-events: none;
-    filter: drop-shadow(0 0 3px rgb(251, 0, 205)) invert(0) brightness(1);
-    
-  }
- 
-
-  .border1 {
-    position: fixed;
-    transform: rotate(180deg);
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    mix-blend-mode: exclusion;
-    filter: invert() drop-shadow(0 0 5px rgb(255, 28, 187)) contrast();
-    
-  }
-  
-  .border2 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    mix-blend-mode: exclusion;
-    filter: invert(0) drop-shadow(0 0 5px rgb(255, 255, 255)) contrast(100);
-  }
-  
- 
-  
- 
-  
-  .bg {
-    font-family: Cybernet;
-    font-size: xx-small;
-    justify-items: center;
-    align-items: center;
-    display: inline-grid;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-
-  }
-  
+        @font-face {
+          font-family: cyber;
+          src: url('/font/BPdotsUnicasePlusBold.otf');
+        }
     </style>
 </head>
 <body>
-    <iframe src="/cables_copy_of_BallBox1/index.html" frameborder="0"></iframe>
-    
-    <div class="bg">
-        
 
-        <div id="overlay"></div>
-        <div id="iframeContainer">
-          <iframe src="/virus/index.html" height="100%" width="100%" frameborder="0" class="virus"></iframe> 
-            </div>
-        <img src="/images/Untitled-1 [Recovered].png" class="border2"> 
-        <img src="/images/telas_border.png" alt="border" class="border1">
-        <img src="/0001 (2).gif" alt="sharkgif" class='gif'>
-
-
-    
-    <img src="/images/justframe.png" alt="" class="justframe">
-   
+<div class="marquee-container">
+    <div class="marquee">𓄺⠕𐫈⊹⑈𓄺⠕𐫈⊹⑈𓄺⠕𐫈⊹⑈Thermal Gems were found relatively free from temperature degradation and ocean brine at the time of retrieval𓄺⠕𐫈⊹⑈𓄺⠕𐫈⊹⑈𓄺⠕𐫈⊹⑈</div>
 </div>
 
+<div class="container">
+    <img src="/jewel/84ff285f2611ebd-moshed-12-11-13-09-13.gif">
+    <iframe class="thermal" src="/cables_copy_of_BallBox1/index.html" frameborder="0"></iframe>
+</div>
 
 </body>
 </html>
+
