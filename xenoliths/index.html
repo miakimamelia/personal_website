@@ -5,6 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xenoliths</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+
+#overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #iframeContainer {
+    position: fixed;
+    z-index: 100000;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto; /* Allows clicks on the iframe */
+    filter: drop-shadow(0 0 5px rgba(255,255,255, 1));
+  }
+  
+
+.parent {
+ 
+    position: relative;
+    z-index: -10;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+    display: grid;
+}
+
+
+img {
+    width: 50vw;
+    height: 50vh;
+    filter: saturate(3);
+}
+
+.logo {
+position: fixed;
+  pointer-events: none;
+  filter: drop-shadow(0 0 3px rgb(4, 22, 157));
+
+ }
+
+
+  
+  
+  
+  
+  .gif {
+  position: fixed;
+    width: 40vw;
+
+    margin-bottom: 70vh;
+    pointer-events: none;
+    filter: drop-shadow(0 0 3px rgb(251, 0, 205)) invert(0) brightness(1);
+    
+  }
+  .justframe {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: difference;
+    filter: invert(1) saturate(3) drop-shadow(0 0 5px rgb(3, 133, 226));
+
+}
+
+  .border1 {
+    position: fixed;
+    transform: rotate(180deg);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    mix-blend-mode: exclusion;
+    filter: invert() drop-shadow(0 0 5px rgb(255, 1, 179)) contrast();
+    
+  }
+  
+  .border2 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: exclusion;
+    filter: invert(0) drop-shadow(0 0 5px rgb(255, 255, 255)) contrast(100);
+  }
+  
+ 
+  
+ .div1 {
+    margin-top:15vh;
+ }
+  
+  .bg {
+    font-family: Cybernet;
+    font-size: xx-small;
+    justify-items: center;
+    align-items: center;
+    display: inline-grid;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+  }
+  
+
+  p {
+    color: wheat;
+    font-family: monospace;
+    
+  }
+
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-family: cyber;
+  }
+
+
+  .message {
+margin-left: 20%;
+margin-right: 20%;
+    margin-top: 10%;
+    font-family: cyber;
+    width: 30vw;
+    height: 30vh;
+  }
+
+ 
+
+  @font-face {
+    font-family: cyber;
+    src: url('/font/BPdotsUnicasePlusBold.otf');
+  }
+
+.text {
+padding-left: 2vw;
+
+}
+
+.text p {
+    padding-left: 15vw;
+}
+
+  
+    </style>
 </head>
 <body>
 
@@ -14,43 +176,102 @@
 
         <div id="overlay"></div>
         <div id="iframeContainer">
-          <iframe src="/virus/index.html" height="100%" width="100%" frameborder="0" class="virus"></iframe> 
+          <iframe src="virus.html" height="100%" width="100%" frameborder="0" class="virus"></iframe> 
             </div>
         <img src="/images/Untitled-1 [Recovered].png" class="border2"> 
         <img src="/images/telas_border.png" alt="border" class="border1">
         <img src="/0001 (2).gif" alt="sharkgif" class='gif'>
 
-
+        <p>Please Scroll</p>
     
     <img src="/images/justframe.png" alt="" class="justframe">
    
-</div>
-
+ 
 
         <div class="parent">
-            <div class="div1">     
-                <img src="comp1.gif">
-            </div>
-            <div class="div2">
-                <img src="comp2.gif">
 
-            </div>
-            <div class="div3">
-                <img src="Comp3.gif">
-
-            </div>
-            <div class="div4">     
-                <img src="comp4.gif">
-
-            </div>
-            <div class="div5">
-                <img src="comp5.gif">
-            </div>
-            <div class="div6"> 
-                <img src="comp6.gif">
-
-            </div>
         
+
+
+<!-- ... (previous code) ... -->
+
+<div class="div1">     
+    <img src="comp1.gif">
+    <div class="text">
+        <p>Name: Iriscentia Phylum <br>
+        Rarity: Uncommon<br>
+        ID: XNA-A-1000
+        </p>
+    </div>
+</div>
+
+<div class="div2">
+    <img src="comp2.gif">
+    <div class="text">
+        <p>Name: Polypus Aranea<br>
+            Rarity: Very Rare<br>
+            ID: XNA-A-1001
+
+            </p>
+        <!-- Content for div2 -->
+    </div>
+</div>
+
+<div class="div3">
+    <img src="Comp3.gif">
+    <div class="text">
+        <p>Name: Rubigo Rixula Tabula Mater<br>
+            Rarity: Rare in Good Condition<br>
+            ID: XNA-A-1002
+
+            </p>
+        <!-- Content for div3 -->
+    </div>
+</div>
+
+<div class="div4">     
+    <img src="comp4.gif">
+    <div class="text">
+        <p>Name: Synthetic Argentum Anthropod<br>
+        Rarity: Data Deficient<br>
+        ID: XNA-A-1003
+
+        </p>
+    </div>
+</div>
+
+<div class="div5">
+    <img src="comp5.gif">
+    <div class="text">
+        <p>Name: Photometric Luma Scarabaeus<br>
+            Rarity: Extremely Rare <br>
+            ID: XNA-A-1004
+
+            </p>
+        <!-- Content for div5 -->
+    </div>
+</div>
+
+<!-- ... (remaining code) ... -->
+
+<!-- ... (previous code) ... -->
+
+<div class="div6"> 
+    <img src="comp6.gif">
+    <div class="text" style="margin-bottom: 25vh;">
+        <p>Name: Iris Lucens Maris<br>
+            Rarity: Ephemeral<br>
+            ID: XNA-A-1005
+
+            </p>
+        <!-- Content for div6 -->
+    </div>
+</div>
+
+</div>
+</body>
+</html>
+
 
 </div>
 </body>

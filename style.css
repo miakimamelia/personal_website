@@ -17,21 +17,37 @@
   background-color: rgba(169, 137, 137, 0.5);
   justify-content: center;
   align-items: center;
+  color: rgb(238, 246, 237);
   z-index: 999999999;
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
+  font-family: cybernet;
+  width: 50vw;
+  background-color: rgba(172, 138, 138, 0.222);
+  mix-blend-mode: screen;
+  margin: 100px;
+  padding: 50px;
   text-align: center;
   z-index: 99999999999;
   border-radius: 50px;
-
+  box-shadow: 0 0 20px rgb(255, 255, 255); /* Outer glow with a white color and some transparency */
 }
+
+.modal-content p {
+  color: black;
+  text-shadow: 2px 2px 4px rgb(0, 245, 90) ; /* Text shadow with an offset, blur radius, and color */
+}
+
 
 .modal-content button {
   cursor: pointer;
+  color: rgb(0, 255, 0);
+  border-radius: 100px;
+  background-color: rgb(102, 102, 102);
+  border: 2px solid #00ff51; /* Change the color to your desired outline color */
 }
+
 
 
 
@@ -246,9 +262,6 @@ position: fixed;
   margin-bottom: 70vh;
   pointer-events: none;
   filter: drop-shadow(0 0 3px rgb(4, 22, 157));
-
- 
-  
 }
 
 .border1 {
@@ -258,7 +271,6 @@ position: fixed;
   height: 100vh;
   mix-blend-mode: difference;
   filter: invert(0) brightness(10) grayscale(90%) ;
-  
 }
 
 .border2 {
